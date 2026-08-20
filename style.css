@@ -1,9 +1,13 @@
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;color:#fff4e8}
 body{min-height:100vh;background:radial-gradient(circle at 50% 12%,rgba(145,82,49,.25),transparent 38%),linear-gradient(135deg,#090605,#1b0d09 52%,#0b0706)}
-.hub{width:min(560px,92vw);margin:auto;padding:40px 0 80px}.profile{text-align:center;margin-bottom:38px}
-.profile-picture{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid #a66a45;box-shadow:0 0 10px #fff,0 0 25px rgba(255,255,255,.55),0 0 45px rgba(139,82,50,.5);margin-bottom:18px}
+.hub{width:min(560px,92vw);margin:auto;padding:42px 0 80px}.profile,.page-head{text-align:center;margin-bottom:38px}
+.profile-picture{width:130px;height:130px;border-radius:50%;object-fit:cover;border:3px solid #a66a45;box-shadow:0 0 10px #fff,0 0 25px #ffffff88,0 0 45px #8b523277;margin-bottom:18px}
 .badge{display:table;margin:0 auto;padding:8px 15px;border:1px solid #6e4937;border-radius:999px;color:#e7c6ae;font-size:11px;font-weight:800;letter-spacing:2px;background:#47271ba6}
-h1{font-size:48px;margin:16px 0 5px}.profile p{margin:0;color:#c9a98f}.cards{display:grid;gap:18px}
-.card{display:block;text-decoration:none;color:inherit;padding:20px 22px;border-radius:13px;border:1px solid #6f4935;background:linear-gradient(145deg,#3e2117f5,#1f100cf7);box-shadow:0 12px 30px #0000003d;transition:.2s}
+h1{font-size:46px;margin:16px 0 5px}.profile p,.page-head p{margin:0;color:#c9a98f}.cards{display:grid;gap:18px}
+.card{display:block;text-decoration:none;color:inherit;padding:20px 22px;border-radius:13px;border:1px solid #6f4935;background:linear-gradient(145deg,#3e2117f5,#1f100cf7);box-shadow:0 12px 30px #0006;transition:.2s}
 .card:hover{transform:translateY(-3px);border-color:#a56e4e}.card h2{font-size:20px;margin:0 0 7px}.card p{margin:0;color:#c7a994;font-size:14px}
+.back-button,.download-button{display:inline-block;text-decoration:none;color:#fff4e8;font-weight:bold;border:1px solid #8b573b;background:#3e2117;border-radius:11px;padding:12px 19px;transition:.2s}
+.back-button:hover{transform:translateX(-3px);background:#59301f}.download-area{text-align:center;padding:30px;border:1px solid #6f4935;border-radius:14px;background:#25130e}
+.download-button{font-size:18px;padding:15px 24px}.download-button:hover{transform:translateY(-2px);background:#59301f}.hint{color:#c9a98f;font-size:13px;margin-top:18px}
 #cursorGlow{position:fixed;width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:0 0 8px #fff,0 0 20px #ffffffcc;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)}
+@media(max-width:600px){#cursorGlow{display:none}}
